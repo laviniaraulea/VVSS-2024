@@ -40,6 +40,8 @@ public class Controller {
     @FXML
     private TableColumn<Task, String> columnTitle;
     @FXML
+    private TableColumn<Task, String> columnDescription;
+    @FXML
     private TableColumn<Task, String> columnTime;
     @FXML
     private TableColumn<Task, String> columnRepeated;
@@ -73,6 +75,7 @@ public class Controller {
     public void initialize(){
         log.info("Main controller initializing");
         columnTitle.setCellValueFactory(new PropertyValueFactory<>("title"));
+        columnDescription.setCellValueFactory(new PropertyValueFactory<>("description"));
         columnTime.setCellValueFactory(new PropertyValueFactory<>("formattedDateStart"));
         columnRepeated.setCellValueFactory(new PropertyValueFactory<>("formattedRepeated"));
     }

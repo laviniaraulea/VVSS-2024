@@ -46,7 +46,7 @@ public class NewEditController {
 
     private boolean incorrectInputMade;
     @FXML
-    private TextField fieldTitle;
+    private TextField fieldDescription;
     @FXML
     private DatePicker datePickerStart;
     @FXML
@@ -103,7 +103,6 @@ public class NewEditController {
 
     private void initEditWindow(String title){
         currentStage.setTitle(title);
-        fieldTitle.setText(currentTask.getTitle());
         datePickerStart.setValue(dateService.getLocalDateValueFromDate(currentTask.getStartTime()));
         txtFieldTimeStart.setText(dateService.getTimeOfTheDayFromDate(currentTask.getStartTime()));
 
@@ -125,7 +124,7 @@ public class NewEditController {
         if (source.isSelected()){
             hideRepeatedTaskModule(false);
         }
-        else if (!source.isSelected()){
+        else {
             hideRepeatedTaskModule(true);
         }
     }
@@ -188,14 +187,14 @@ public class NewEditController {
 
     private Task makeTask(){
         Task result;
-        String newTitle = fieldTitle.getText();
+        String newTitle = "titlu";
         Date startDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerStart.getValue());//ONLY date!!without time
         Date newStartDate = dateService.getDateMergedWithTime(txtFieldTimeStart.getText(), startDateWithNoTime);
         if (checkBoxRepeated.isSelected()){
             Date endDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerEnd.getValue());
             Date newEndDate = dateService.getDateMergedWithTime(txtFieldTimeEnd.getText(), endDateWithNoTime);
             int newInterval = service.parseFromStringToSeconds(fieldInterval.getText());
-            if (newStartDate.after(newEndDate)) throw new IllegalArgumentException("Start date should be before end");
+            if (newStartDate.after(newEndDate)){ throw new IllegalArgumentException("Start date should be before end");}
             result = new Task(newTitle, newStartDate,newEndDate, newInterval);
         }
         else {
