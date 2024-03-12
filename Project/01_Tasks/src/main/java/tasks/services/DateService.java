@@ -28,6 +28,7 @@ public class DateService {
     }
     public Date getDateMergedWithTime(String time, Date noTimeDate) {//to retrieve Date object from both DatePicker and time field
         String[] units = time.split(":");
+        Validator.validatePositiveInteger(units[0]);
         int hour = Integer.parseInt(units[0]);
         int minute = Integer.parseInt(units[1]);
         if (hour > HOURS_IN_A_DAY || minute > MINUTES_IN_HOUR){ throw new IllegalArgumentException("time unit exceeds bounds");}
