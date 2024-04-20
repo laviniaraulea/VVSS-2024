@@ -6,12 +6,12 @@ import org.apache.log4j.Logger;
 
 import java.util.*;
 
-public class ArrayTaskList extends TaskList{
+public class TasksRepository extends TaskList{
 
     private Task[] tasks;
     private int numberOfTasks;
     private int currentCapacity;
-    private static final Logger log = Logger.getLogger(ArrayTaskList.class.getName());
+    private static final Logger log = Logger.getLogger(TasksRepository.class.getName());
     private class ArrayTaskListIterator implements Iterator<Task> {
         private int cursor;
         private int lastCalled = -1;
@@ -35,12 +35,12 @@ public class ArrayTaskList extends TaskList{
             if (lastCalled == -1){
                 throw new IllegalStateException();
             }
-            ArrayTaskList.this.remove(getTask(lastCalled));
+            TasksRepository.this.remove(getTask(lastCalled));
             cursor = lastCalled;
             lastCalled = -1;
         }
     }
-    public ArrayTaskList(){
+    public TasksRepository(){
         currentCapacity = 10;
         this.tasks = new Task[currentCapacity];
     }
@@ -107,12 +107,12 @@ public class ArrayTaskList extends TaskList{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        ArrayTaskList that = (ArrayTaskList) o;
+        TasksRepository that = (TasksRepository) o;
 
         if (numberOfTasks != that.numberOfTasks) return false;
         int i = 0;
         for (Task a : this){
-            if (!a.equals(((ArrayTaskList) o).getTask(i))){
+            if (!a.equals(((TasksRepository) o).getTask(i))){
                 return false;
             }
             i++;
@@ -137,8 +137,8 @@ public class ArrayTaskList extends TaskList{
                 '}';
     }
     @Override
-    protected ArrayTaskList clone() throws CloneNotSupportedException {
-        ArrayTaskList tasks = new ArrayTaskList();
+    protected TasksRepository clone() throws CloneNotSupportedException {
+        TasksRepository tasks = new TasksRepository();
         for (int i = 0; i < this.tasks.length; i++){
             tasks.add(this.getTask(i));
         }
