@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.controller.Controller;
 import tasks.controller.Notificator;
-import tasks.model.ArrayTaskList;
+import tasks.model.TasksRepository;
 import tasks.services.TaskIO;
 import tasks.services.TasksService;
 
@@ -22,7 +22,7 @@ public class Main extends Application {
     private static final int defaultHeight = 520;
     private static final Logger log = Logger.getLogger(Main.class.getName());
 
-    private ArrayTaskList savedTasksList = new ArrayTaskList();
+    private TasksRepository savedTasksList = new TasksRepository();
 
     private static ClassLoader classLoader = Main.class.getClassLoader();
     public static File savedTasksFile = new File("data/tasks.txt");
