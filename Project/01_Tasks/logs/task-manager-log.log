@@ -75,3 +75,67 @@
 2024-03-09 18:53:31 INFO  Controller:76 - Main controller initializing
 2024-03-09 18:53:35 INFO  NewEditController:89 - new/edit window initializing
 2024-03-09 18:53:36 INFO  NewEditController:89 - new/edit window initializing
+2024-03-12 12:19:10 INFO  Main:35 - saved data reading
+2024-03-12 12:19:10 INFO  Main:40 - application start
+2024-03-12 12:19:10 INFO  Controller:76 - Main controller initializing
+2024-03-12 12:19:10 ERROR Main:55 - error reading main.fxml
+2024-03-12 12:20:39 INFO  Main:35 - saved data reading
+2024-03-12 12:20:39 INFO  Main:40 - application start
+2024-03-12 12:20:40 INFO  Controller:76 - Main controller initializing
+2024-03-12 12:20:40 ERROR Main:55 - error reading main.fxml
+2024-03-12 12:22:44 INFO  Main:35 - saved data reading
+2024-03-12 12:22:44 INFO  Main:40 - application start
+2024-03-12 12:22:44 INFO  Controller:76 - Main controller initializing
+2024-03-12 12:22:44 ERROR Main:55 - error reading main.fxml
+2024-03-12 12:23:29 INFO  Main:35 - saved data reading
+2024-03-12 12:23:29 INFO  Main:40 - application start
+2024-03-12 12:23:29 INFO  Controller:76 - Main controller initializing
+2024-03-12 12:50:47 INFO  Main:35 - saved data reading
+2024-03-12 12:50:47 INFO  Main:40 - application start
+2024-03-12 12:50:47 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:22:25 INFO  Main:35 - saved data reading
+2024-03-24 18:22:25 INFO  Main:40 - application start
+2024-03-24 18:22:25 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:22:28 INFO  NewEditController:89 - new/edit window initializing
+2024-03-24 18:23:49 INFO  Main:35 - saved data reading
+2024-03-24 18:23:49 INFO  Main:40 - application start
+2024-03-24 18:23:49 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:23:57 INFO  Main:35 - saved data reading
+2024-03-24 18:23:57 INFO  Main:40 - application start
+2024-03-24 18:23:57 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:23:59 INFO  NewEditController:89 - new/edit window initializing
+2024-03-24 18:24:29 INFO  Main:35 - saved data reading
+2024-03-24 18:24:29 INFO  Main:40 - application start
+2024-03-24 18:24:29 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:24:32 INFO  NewEditController:89 - new/edit window initializing
+2024-03-24 18:51:07 INFO  Main:35 - saved data reading
+2024-03-24 18:51:07 INFO  Main:40 - application start
+2024-03-24 18:51:07 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:51:09 INFO  NewEditController:89 - new/edit window initializing
+2024-03-24 18:51:31 INFO  Main:35 - saved data reading
+2024-03-24 18:51:31 INFO  Main:40 - application start
+2024-03-24 18:51:31 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:51:34 INFO  NewEditController:89 - new/edit window initializing
+2024-03-24 18:53:49 INFO  Main:35 - saved data reading
+2024-03-24 18:53:49 INFO  Main:40 - application start
+2024-03-24 18:53:50 INFO  Controller:76 - Main controller initializing
+2024-03-24 18:53:53 INFO  NewEditController:89 - new/edit window initializing
+2024-03-24 19:24:23 INFO  Main:35 - saved data reading
+2024-03-24 19:24:23 INFO  Main:40 - application start
+2024-03-24 19:24:24 INFO  Controller:76 - Main controller initializing
+2024-03-24 19:24:26 INFO  NewEditController:89 - new/edit window initializing
+2024-03-25 13:13:19 ERROR TaskIO:79 - IO exception reading or writing file
+2024-03-25 13:16:01 ERROR TaskIO:79 - IO exception reading or writing file
+2024-03-26 12:50:15 ERROR Task:54 - interval < than 1
+2024-03-26 13:42:22 ERROR Task:54 - interval < than 1
+2024-04-07 16:52:06 ERROR Task:54 - interval < than 1
+2024-04-07 16:57:55 INFO  Main:35 - saved data reading
+2024-04-07 16:57:55 INFO  Main:40 - application start
+2024-04-07 16:57:56 INFO  Controller:76 - Main controller initializing
+2024-04-07 17:58:53 INFO  Main:35 - saved data reading
+2024-04-07 17:58:53 INFO  Main:40 - application start
+2024-04-07 17:58:53 INFO  Controller:76 - Main controller initializing
+2024-04-07 18:01:14 INFO  Main:35 - saved data reading
+2024-04-07 18:01:14 INFO  Main:40 - application start
+2024-04-07 18:01:14 INFO  Controller:76 - Main controller initializing
+2024-04-20 15:07:42 ERROR Task:50 - time below bound

@@ -2,7 +2,7 @@ package tasks.services;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import tasks.model.ArrayTaskList;
+import tasks.model.TasksRepository;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
 
@@ -11,10 +11,30 @@ import java.util.Date;
 
 public class TasksService {
 
-    private ArrayTaskList tasks;
+    private TasksRepository tasks;
 
-    public TasksService(ArrayTaskList tasks){
+
+    public void setTasks(TasksRepository tasks) {
         this.tasks = tasks;
+    }
+
+    public TasksService(TasksRepository tasks){
+        this.tasks = tasks;
+    }
+
+    public void removeTask(Task task){
+        tasks.remove(task);
+    }
+    public void saveTask( Task task){
+
+        tasks.add(task);
+    }
+    public void saveTask(ObservableList tasksList, String newTitle, Date newEndDate,  Date newStartDate, int newInterval){
+        if(newTitle.equals("")){ throw new IllegalArgumentException("The title should not be empty");}
+        if (newStartDate.after(newEndDate)){ throw new IllegalArgumentException("Start date should be before end");}
+        Task task = new Task(newTitle, newStartDate,newEndDate, newInterval);
+        tasksList.add(task);
+        tasks.add(task);
     }
 
     public ObservableList<Task> getObservableList(){

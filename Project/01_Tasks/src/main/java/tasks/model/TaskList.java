@@ -16,8 +16,8 @@ public abstract class TaskList implements Iterable<Task>, Serializable  {
 
     public TaskList incoming(Date from, Date to){
         TaskList incomingTasks;
-        if (this instanceof ArrayTaskList){
-            incomingTasks = new ArrayTaskList();
+        if (this instanceof TasksRepository){
+            incomingTasks = new TasksRepository();
         }
         else {
             incomingTasks = new LinkedTaskList();
