@@ -87,7 +87,7 @@ class TasksServiceTest {
 
     @Test
     @DisplayName("Test saveTask method with empty title")
-    void saveTask_EmptyTitle_IllegalArgumentExceptionThrown() {
+    void saveTaskEmptyTitle() {
         // Arrange
         TasksService service = new TasksService(savedTasksList);
         String title = "";
