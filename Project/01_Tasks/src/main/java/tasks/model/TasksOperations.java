@@ -12,6 +12,9 @@ public class TasksOperations {
         tasks.addAll(tasksList);
     }
     public Iterable<Task> incoming(Date start, Date end){
+        if(start== null || end == null){
+            throw new IllegalArgumentException();
+        }
         System.out.println(start);
         System.out.println(end);
         ArrayList<Task> incomingTasks = new ArrayList<>();
